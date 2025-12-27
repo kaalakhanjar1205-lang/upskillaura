@@ -59,6 +59,10 @@ def create_app():
 
 app = create_app()
 
+# 🔥 THIS LINE CREATES TABLES ON RENDER
+with app.app_context():
+    db.create_all()
+# # 🔥 THIS LINE CREATES TABLES ON RENDER
 
 # from flask import Flask, jsonify, render_template
 # from config import Config
