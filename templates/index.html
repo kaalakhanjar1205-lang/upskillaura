@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Certificate Verification</title>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h2>Certificate Verification</h2>
+        <p>Enter your certificate serial number</p>
+
+        <input
+            type="text"
+            id="serialNumber"
+            placeholder="e.g. CERT001"
+        />
+
+        <button onclick="verifyCertificate()">Verify</button>
+
+        <div id="result"></div>
+    </div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
